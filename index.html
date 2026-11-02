@@ -496,7 +496,7 @@ let h = `
       <div class="tags">${p.태그.map(t=>`<span>${E(t)}</span>`).join("")}</div>
     </div>
     <div class="mets">${p.지표.map(m=>`
-      <div class="met ${m.값.includes("확인")?"chk":""}"><b>${E(m.값)}</b><span>${E(m.설명)}.replace(/&lt;br&gt;/g, "<br>")}</span></div>`).join("")}
+      <div class="met ${m.값.includes("확인")?"chk":""}"><b>${E(m.값)}</b><span>${E(m.설명).replace(/&lt;br&gt;/g, "<br>")}</span></div>`).join("")}
     </div>
     <div class="pj-body">
       <div class="blk"><h4><em>P</em>문제 정의</h4>${p.문제정의.map(x=>`<p>${MARK(x)}</p>`).join("")}</div>

@@ -506,6 +506,13 @@ let h = `
 </section>
 
 <section>
+  <h2>핵심역량</h2>
+  <div class="ways">${D.핵심역량.map(w=>`
+    <div class="way"><b>${E(w.제목)}</b><span>${E(w.설명)}</span></div>`).join("")}
+  </div>
+</section>
+
+<section>
   <h2>일하는 방식</h2>
   <div class="ways">${D.일하는방식.map(w=>`
     <div class="way"><b>${E(w.제목)}</b><span>${E(w.설명)}</span></div>`).join("")}
